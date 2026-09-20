@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#A8261F">
+<title>永登县第一中学 · 学校简介</title>
+<meta name="description" content="永登县第一中学始建于1942年，市级示范性高中，甘肃省文明校园。">
+
+<style>
+/* ===== 字体 ===== */
+@font-face{
+  font-family:'FZXiaoBiaoSong';
+  src:url('assets/FZXiaoBiaoSong.woff2') format('woff2');
+  font-weight:normal;font-style:normal;font-display:swap;
+}
+@font-face{
+  font-family:'FangSongGB';
+  src:url('assets/FangSong.woff2') format('woff2');
+  font-weight:normal;font-style:normal;font-display:swap;
+}
+@font-face{
+  font-family:'KaiTiGB';
+  src:url('assets/KaiTi.woff2') format('woff2');
+  font-weight:normal;font-style:normal;font-display:swap;
+}
+
+:root{
+  --red:#A8261F;
+  --red-deep:#7E1710;
+  --red-bright:#C4382C;
+  --gold:#B8881F;
+  --gold-soft:#E3C88A;
+  --ink:#1F1B18;
+  --ink-body:#3A342E;
+  --ink-soft:#7D746B;
+  --paper:#FFFFFF;
+  --cream:#FBF8F4;
+  --cream2:#F5F0E8;
+  --rule:#E7DFD4;
+
+  --fs-title:'FZXiaoBiaoSong','方正小标宋简体','STZhongsong','SimSun',serif;
+  --fs-song:'FangSongGB','仿宋_GB2312','FangSong','SimSun',serif;
+  --fs-kai:'KaiTiGB','楷体_GB2312','KaiTi',serif;
+  --fs-sans:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  background:var(--cream2);
+  color:var(--ink-body);
+  font-family:var(--fs-sans);
+  font-size:16px;
+  line-height:1.9;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+.paper{
+  max-width:820px;
+  margin:0 auto;
+  background:var(--paper);
+  min-height:100vh;
+  box-shadow:0 0 70px rgba(90,55,35,.11);
+}
+@media(min-width:880px){
+  .paper{margin:30px auto 56px}
+}
+
+/* ============ 红头 ============ */
+.masthead{padding:28px 30px 0}
+.masthead img{width:100%;height:auto;display:block}
+
+/* ============ 标题区 ============ */
+.hero{
+  position:relative;
+  padding:46px 32px 40px;
+  text-align:center;
+  background:linear-gradient(180deg,#FFFFFF 0%,var(--cream) 100%);
+}
+.hero-eyebrow{
+  font-family:var(--fs-kai);
+  font-size:15.5px;
+  color:#000;
+  letter-spacing:.62em;
+  text-indent:.62em;
+  margin-bottom:20px;
+}
+.hero-title{
+  font-family:var(--fs-title);
+  font-size:clamp(34px,9.4vw,54px);
+  color:#000;
+  line-height:1.24;
+  letter-spacing:.2em;
+  text-indent:.2em;
+  font-weight:normal;
+}
+.hero-title .accent{color:#000}
+.hero-orn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:13px;
+  margin:24px auto 0;
+  width:min(320px,80%);
+}
+.hero-orn .ln{
+  flex:1;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold-soft),var(--gold));
+}
+.hero-orn .ln.r{
+  background:linear-gradient(90deg,var(--gold),var(--gold-soft),transparent);
+}
+.hero-orn .dia{
+  width:7px;height:7px;
+  background:var(--gold);
+  transform:rotate(45deg);
+  flex:0 0 7px;
+}
+.hero-sub{
+  font-family:var(--fs-kai);
+  font-size:16.5px;
+  color:var(--ink-soft);
+  letter-spacing:.3em;
+  text-indent:.3em;
+  margin-top:20px;
+}
+
+/* ============ 引言 ============ */
+.intro{
+  margin:0 32px 8px;
+  padding:26px 26px 24px;
+  background:var(--cream);
+  border-radius:4px;
+  position:relative;
+}
+.intro::before{
+  content:"";
+  position:absolute;
+  left:0;top:24px;bottom:24px;
+  width:3px;
+  background:linear-gradient(180deg,var(--red-bright),var(--gold));
+  border-radius:2px;
+}
+.intro p{
+  font-family:var(--fs-song);
+  font-size:19px;
+  line-height:2.05;
+  color:#4A423A;
+  padding-left:14px;
+}
+.intro .key{
+  color:var(--red);
+  font-family:var(--fs-title);
+  font-size:1.06em;
+  padding:0 1px;
+}
+
+/* ============ 章节 ============ */
+section{padding:54px 32px 0}
+section:last-of-type{padding-bottom:10px}
+
+.sec-head{
+  display:flex;
+  align-items:flex-end;
+  gap:15px;
+  margin-bottom:26px;
+}
+.sec-index{
+  font-family:var(--fs-title);
+  font-size:44px;
+  line-height:.86;
+  color:var(--gold-soft);
+  flex:0 0 auto;
+  letter-spacing:-.02em;
+}
+.sec-titles{flex:1;padding-bottom:3px}
+.sec-title{
+  font-family:var(--fs-title);
+  font-size:25px;
+  color:var(--ink);
+  line-height:1.35;
+  letter-spacing:.14em;
+  font-weight:normal;
+}
+.sec-en{
+  font-family:var(--fs-sans);
+  font-size:12px;
+  color:#A89C90;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  margin-top:5px;
+}
+
+/* ============ 正文 ============ */
+p.t{
+  font-size:18px;
+  line-height:2.0;
+  color:var(--ink-body);
+  text-align:justify;
+  letter-spacing:.01em;
+}
+p.t+p.t{margin-top:15px}
+p.t .n{color:var(--red);font-weight:600;font-variant-numeric:tabular-nums}
+
+/* ============ 数据 ============ */
+.stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:2px;
+  margin:28px 0 10px;
+  background:var(--rule);
+  border-radius:6px;
+  overflow:hidden;
+}
+.stat{
+  background:var(--cream);
+  padding:22px 8px 20px;
+  text-align:center;
+}
+.stat-num{
+  font-family:var(--fs-title);
+  font-size:clamp(24px,6vw,34px);
+  color:var(--red);
+  line-height:1.12;
+  letter-spacing:.01em;
+}
+.stat-num i{font-style:normal;font-size:.5em;margin-left:1px;font-family:var(--fs-sans)}
+.stat-label{
+  font-size:14px;
+  color:var(--ink-soft);
+  margin-top:9px;
+  letter-spacing:.12em;
+}
+@media(max-width:580px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+}
+
+/* ============ 图片 ============ */
+figure{margin:30px 0 4px}
+figure img{
+  width:100%;height:auto;display:block;
+  border-radius:5px;
+}
+figcaption{
+  font-family:var(--fs-kai);
+  font-size:15.5px;
+  color:var(--ink-soft);
+  text-align:center;
+  margin-top:13px;
+  letter-spacing:.12em;
+}
+figcaption::before,
+figcaption::after{
+  content:"";
+  display:inline-block;
+  width:18px;height:1px;
+  background:var(--gold-soft);
+  vertical-align:middle;
+}
+figcaption::before{margin-right:10px}
+figcaption::after{margin-left:10px}
+
+/* ============ 设施标签 ============ */
+.fac{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  margin:22px 0 4px;
+}
+.fac span{
+  font-size:15.5px;
+  line-height:1.6;
+  padding:7px 15px;
+  background:var(--cream);
+  border:1px solid var(--rule);
+  border-radius:999px;
+  color:#5A5148;
+  transition:all .24s ease;
+}
+.fac span:hover{
+  border-color:var(--gold-soft);
+  background:#FFFDF9;
+  transform:translateY(-2px);
+}
+
+/* ============ 校训 ============ */
+.motto{
+  margin:28px 0 6px;
+  padding:38px 24px 34px;
+  text-align:center;
+  background:linear-gradient(160deg,#FDF9F4,#F7F0E5);
+  border-radius:6px;
+  position:relative;
+  overflow:hidden;
+}
+.motto::before,
+.motto::after{
+  content:"";
+  position:absolute;
+  width:76px;height:76px;
+  border:1px solid var(--gold-soft);
+  opacity:.55;
+}
+.motto::before{top:14px;left:14px;border-right:none;border-bottom:none}
+.motto::after{bottom:14px;right:14px;border-left:none;border-top:none}
+.motto-main{
+  font-family:var(--fs-title);
+  font-size:clamp(32px,8.6vw,46px);
+  color:var(--red-deep);
+  letter-spacing:.32em;
+  text-indent:.32em;
+  line-height:1.3;
+}
+.motto-div{
+  width:52px;height:2px;
+  background:var(--gold);
+  margin:22px auto;
+  border-radius:1px;
+}
+.motto-note{
+  font-family:var(--fs-kai);
+  font-size:16.5px;
+  color:#6B6156;
+  letter-spacing:.16em;
+  line-height:2;
+}
+.run{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+  margin:26px 0 4px;
+}
+.run-i{
+  text-align:center;
+  padding:20px 6px 18px;
+  background:var(--cream);
+  border-radius:5px;
+  border-bottom:2px solid var(--gold-soft);
+  transition:all .28s ease;
+}
+.run-i:hover{
+  border-bottom-color:var(--red);
+  transform:translateY(-3px);
+}
+.run-i .cn{
+  font-family:var(--fs-title);
+  font-size:clamp(15px,3.9vw,19px);
+  color:var(--red-deep);
+  letter-spacing:.1em;
+  line-height:1.5;
+}
+.run-i .dc{
+  font-size:14px;
+  color:var(--ink-soft);
+  margin-top:9px;
+  letter-spacing:.08em;
+}
+@media(max-width:540px){
+  .run{grid-template-columns:repeat(2,1fr)}
+}
+
+/* ============ 成绩 ============ */
+.year{
+  margin:20px 0 0;
+  padding:22px 24px;
+  background:var(--cream);
+  border-radius:6px;
+  transition:all .28s ease;
+}
+.year:hover{background:#FFFCF8}
+.year.peak{
+  background:linear-gradient(150deg,#FEF8EE,#FBF0DC);
+  border:1px solid var(--gold-soft);
+}
+.year-head{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:13px;
+}
+.year-num{
+  font-family:var(--fs-title);
+  font-size:27px;
+  color:var(--red);
+  letter-spacing:.06em;
+  line-height:1;
+}
+.year-tag{
+  font-size:11.5px;
+  color:#8A6414;
+  background:#FBF3E2;
+  border:1px solid #EBD9AE;
+  padding:2px 10px;
+  border-radius:999px;
+  letter-spacing:.08em;
+}
+.year-body{
+  font-size:17.5px;
+  line-height:1.95;
+  color:var(--ink-body);
+  text-align:justify;
+}
+.year-body .n{color:var(--red);font-weight:600;font-variant-numeric:tabular-nums}
+
+/* ============ 科技创新成果 ============ */
+.tech{
+  margin:30px 0 4px;
+  padding:26px 24px 22px;
+  background:var(--cream);
+  border-radius:6px;
+}
+.tech>p.t{margin-bottom:4px}
+.tech figure{margin:24px 0 0}
+.tech figure:first-of-type{margin-top:22px}
+
+/* ============ 荣誉 ============ */
+.honors{
+  display:grid;
+  gap:11px;
+  margin:24px 0 4px;
+}
+.honor{
+  display:flex;
+  gap:16px;
+  align-items:baseline;
+  padding:15px 20px;
+  background:var(--cream);
+  border-radius:5px;
+  transition:all .26s ease;
+}
+.honor:hover{
+  background:#FFFCF8;
+  transform:translateX(3px);
+}
+.honor-y{
+  font-family:var(--fs-title);
+  font-size:17.5px;
+  color:var(--red);
+  flex:0 0 auto;
+  white-space:nowrap;
+  letter-spacing:.04em;
+}
+.honor-t{
+  flex:1;
+  font-size:17px;
+  line-height:1.8;
+  color:var(--ink-body);
+}
+
+/* ============ 展望 ============ */
+.outlook{
+  margin:24px 0 4px;
+  padding:32px 28px;
+  background:linear-gradient(150deg,#8E1C15,#6E120D);
+  border-radius:6px;
+  color:#F5EDE4;
+  position:relative;
+  overflow:hidden;
+}
+.outlook::before{
+  content:"";
+  position:absolute;
+  top:-40px;right:-30px;
+  width:150px;height:150px;
+  border:1px solid rgba(232,201,138,.26);
+  border-radius:50%;
+}
+.outlook::after{
+  content:"";
+  position:absolute;
+  bottom:-52px;right:22px;
+  width:96px;height:96px;
+  border:1px solid rgba(232,201,138,.16);
+  border-radius:50%;
+}
+.outlook p{
+  position:relative;
+  font-family:var(--fs-song);
+  font-size:18.5px;
+  line-height:2.05;
+  text-align:justify;
+  color:#F5EDE4;
+}
+
+/* ============ 页脚 ============ */
+footer{
+  margin-top:64px;
+  padding:26px 32px 44px;
+  text-align:center;
+  border-top:1px solid var(--rule);
+  font-size:14px;
+  color:#A69D93;
+  line-height:2;
+  letter-spacing:.12em;
+}
+
+@media(max-width:480px){
+  .masthead{padding:20px 18px 0}
+  .hero{padding:36px 22px 34px}
+  .intro{margin:0 22px 6px;padding:22px 20px}
+  .intro p{font-size:17.5px}
+  section{padding:46px 22px 0}
+  .sec-index{font-size:34px}
+  .sec-title{font-size:22px}
+  footer{margin-top:52px;padding:22px 22px 38px}
+  .outlook{padding:26px 22px}
+  .year{padding:20px 18px}
+  .honor{padding:14px 16px;gap:13px}
+}
+@media print{
+  body{background:#fff}
+  .paper{box-shadow:none;margin:0;max-width:none}
+}
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- 红头 -->
+  <header class="masthead">
+    <img src="assets/cover_header.jpg" alt="永登县第一中学 红头">
+  </header>
+
+  <!-- 标题区 -->
+  <div class="hero">
+    <div class="hero-eyebrow">学 校 简 介</div>
+    <h1 class="hero-title">永登县<span class="accent">第一中学</span></h1>
+    <div class="hero-orn">
+      <span class="ln"></span>
+      <span class="dia"></span>
+      <span class="ln r"></span>
+    </div>
+    <div class="hero-sub">始建于 1942 年 · 市级示范性高中</div>
+  </div>
+
+  <!-- 引言 -->
+  <div class="intro">
+    <p>永登县第一中学创建于 <span class="key">1942 年</span>，是一所在县内外颇有影响的县属重点中学，<span class="key">2001 年被评为市级示范性高中</span>。学校占地面积 105.93 亩，拥有完善的教学设施、充足的运动场地，各种功能室配备齐全。</p>
+  </div>
+
+  <!-- 一、学校概况 -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-index">01</div>
+      <div class="sec-titles">
+        <h2 class="sec-title">学校概况</h2>
+        <div class="sec-en">School Profile</div>
+      </div>
+    </div>
+
+    <figure>
+      <img src="assets/photo_campus.jpg" alt="校园一景" loading="lazy">
+      <figcaption>校园一景</figcaption>
+    </figure>
+
+    <p class="t">学校现有教学班 <span class="n">47</span> 个，学生 <span class="n">2325</span> 名。教职工 <span class="n">200</span> 人，其中正高级职称教师 <span class="n">5</span> 人，副高级职称教师 <span class="n">80</span> 人，中级职称教师 <span class="n">77</span> 人。</p>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-num">47<i>个</i></div>
+        <div class="stat-label">教学班</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">2325<i>名</i></div>
+        <div class="stat-label">在校学生</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">200<i>人</i></div>
+        <div class="stat-label">教职工</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">105.93<i>亩</i></div>
+        <div class="stat-label">占地面积</div>
+      </div>
+    </div>
+
+    <figure>
+      <img src="assets/photo_teachers.jpg" alt="部分骨干教师合影" loading="lazy">
+      <figcaption>部分骨干教师合影</figcaption>
+    </figure>
+  </section>
+
+  <!-- 二、办学条件 -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-index">02</div>
+      <div class="sec-titles">
+        <h2 class="sec-title">办学条件</h2>
+        <div class="sec-en">Campus &amp; Facilities</div>
+      </div>
+    </div>
+
+    <p class="t">学校占地面积 <span class="n">105.93</span> 亩，拥有完善的教学设施、充足的运动场地，各种功能室配备齐全。</p>
+
+    <div class="fac">
+      <span>12 个理化生实验室</span>
+      <span>60 多间智慧黑板教室</span>
+      <span>1 个录播教室</span>
+      <span>2 个多功能会议厅</span>
+      <span>4 个成都七中网络直播班</span>
+    </div>
+
+    <figure>
+      <img src="assets/photo_building.jpg" alt="校园新建教学楼" loading="lazy">
+      <figcaption>校园新建教学楼</figcaption>
+    </figure>
+
+    <p class="t">学校有图书馆，其藏书达 <span class="n">11</span> 万余册，报刊杂志 <span class="n">200</span> 多种；有学生餐厅，面积达 <span class="n">2000</span> 平方米；有 <span class="n">400</span> 米 <span class="n">8</span> 跑道标准田径场和悬浮式地板铺设的校园广场。</p>
+
+    <figure>
+      <img src="assets/photo_football.jpg" alt="操场足球队" loading="lazy">
+      <figcaption>操场足球队</figcaption>
+    </figure>
+  </section>
+
+  <!-- 三、校训与文化 -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-index">03</div>
+      <div class="sec-titles">
+        <h2 class="sec-title">校训与文化</h2>
+        <div class="sec-en">Motto &amp; Culture</div>
+      </div>
+    </div>
+
+    <p class="t">在悠久的办学历史中，学校形成了“严爱勤实”的校训和以“润”文化为核心的校园文化体系，坚持“润以养德、润以启智、润以育美、润以雅正”。质量强校、科研兴校、文化润校已蔚然成风。</p>
+
+    <div class="motto">
+      <div class="motto-main">严爱勤实</div>
+      <div class="motto-div"></div>
+      <div class="motto-note">校训 · 润以养德　润以启智　润以育美　润以雅正</div>
+    </div>
+
+    <div class="run">
+      <div class="run-i">
+        <div class="cn">润以养德</div>
+        <div class="dc">立德树人</div>
+      </div>
+      <div class="run-i">
+        <div class="cn">润以启智</div>
+        <div class="dc">启智润心</div>
+      </div>
+      <div class="run-i">
+        <div class="cn">润以育美</div>
+        <div class="dc">以美育人</div>
+      </div>
+      <div class="run-i">
+        <div class="cn">润以雅正</div>
+        <div class="dc">雅正修身</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 四、办学成效 -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-index">04</div>
+      <div class="sec-titles">
+        <h2 class="sec-title">办学成效</h2>
+        <div class="sec-en">Achievements</div>
+      </div>
+    </div>
+
+    <p class="t">近年来，学校教育教学质量稳步提升，连创佳绩。</p>
+
+    <div class="year">
+      <div class="year-head"><div class="year-num">2022 年</div></div>
+      <div class="year-body">高考一本上线 <span class="n">188</span> 人，上线率 <span class="n">24.3%</span>，本科上线 <span class="n">573</span> 人，上线率 <span class="n">74.1%</span>。</div>
+    </div>
+
+    <div class="year">
+      <div class="year-head"><div class="year-num">2023 年</div></div>
+      <div class="year-body">高考一本上线 <span class="n">167</span> 人，上线率 <span class="n">24.1%</span>，本科上线 <span class="n">493</span> 人，上线率 <span class="n">71.1%</span>。</div>
+    </div>
+
+    <div class="year peak">
+      <div class="year-head">
+        <div class="year-num">2024 年</div>
+        <span class="year-tag">创历史新高</span>
+      </div>
+      <div class="year-body">高考特控线以上人数 <span class="n">221</span> 人，上线率 <span class="n">33.95%</span>；本科线以上人数 <span class="n">598</span> 人，上线率 <span class="n">91.86%</span>，<span class="n">600</span> 分以上 <span class="n">11</span> 人，各项数据均创历史新高。</div>
+    </div>
+
+    <div class="tech">
+      <p class="t">学校重视学生科学素养与创新能力的培养。在 <span class="n">第 40 届甘肃省青少年科技创新大赛</span> 中，我校学子参赛项目荣获青少年科技创新成果（高中组）一等奖。</p>
+
+      <figure>
+        <img src="assets/photo_tech_award.jpg" alt="青少年科技创新成果（高中组）一等奖颁奖现场" loading="lazy">
+        <figcaption>大赛一等奖颁奖现场</figcaption>
+      </figure>
+
+      <figure>
+        <img src="assets/photo_tech_group.jpg" alt="第40届甘肃省青少年科技创新大赛留影" loading="lazy">
+        <figcaption>第 40 届甘肃省青少年科技创新大赛留影</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 五、荣誉与表彰 -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-index">05</div>
+      <div class="sec-titles">
+        <h2 class="sec-title">荣誉与表彰</h2>
+        <div class="sec-en">Honors</div>
+      </div>
+    </div>
+
+    <p class="t">学校曾先后获得省、市、县级教育质量优秀奖，并已连续七年被评为“永登县教育系统先进集体”。</p>
+
+    <div class="honors">
+      <div class="honor"><span class="honor-y">2016</span><span class="honor-t">被评为省级语言文字规范化示范校</span></div>
+      <div class="honor"><span class="honor-y">2017</span><span class="honor-t">获评全国教育改革创新示范校</span></div>
+      <div class="honor"><span class="honor-y">2018</span><span class="honor-t">获兰州市普通高中教育质量进步奖</span></div>
+      <div class="honor"><span class="honor-y">2019</span><span class="honor-t">1 月被评为市级文明校园，同年 9 月被评为兰州市教育系统先进集体</span></div>
+      <div class="honor"><span class="honor-y">2021</span><span class="honor-t">9 月被授予甘肃省“园丁奖”先进集体称号，同年 12 月被兰州市教育局评为市级示范性高中教育质量优秀奖</span></div>
+      <div class="honor"><span class="honor-y">2023</span><span class="honor-t">3 月被省委、省政府评为甘肃省文明校园</span></div>
+    </div>
+  </section>
+
+  <!-- 六、集团办学与未来展望 -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-index">06</div>
+      <div class="sec-titles">
+        <h2 class="sec-title">集团办学与未来展望</h2>
+        <div class="sec-en">Outlook</div>
+      </div>
+    </div>
+
+    <p class="t">学校于 <span class="n">2023</span> 年 <span class="n">8</span> 月加入兰州市第五十八中学教育集团，在集团校平台的支持下，通过优化制度管理、精细化开展教学评价、联合教研和导师制等工作，不断推进学校高质量发展。</p>
+
+    <div class="outlook">
+      <p>永登一中正以“强省会”战略行动为契机，乘县中振兴之东风，积极践行先进的教育理念，规范办学行为，推进科学民主管理，落实课程育人，加强课堂教学改革，改善办学条件，推动学校特色发展。在新一届领导班子“高质量现代化发展”战略规划的引领下，学校必将发展成为优质的县域省级示范性高中。</p>
+    </div>
+  </section>
+
+  <!-- 落款（已按需求删除） -->
+
+  <footer>
+    永登县第一中学 · 学校简介<br>
+    本页面内容仅用于学校信息展示
+  </footer>
+
+</div>
+</body>
+</html>
